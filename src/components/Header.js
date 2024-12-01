@@ -1,7 +1,7 @@
 // Import React
 
-import React from 'react';
-import Navigation from './Navigation';
+import React from "react";
+import Navigation from "./Navigation";
 
 // Header Component
 // This component will be used across multiple pages.
@@ -12,7 +12,7 @@ const Header = () => {
     <header>
       {/* Site title: Displays the developer's name */}
 
-      <h1>Sam Mina's Portfolio</h1>
+      <h1>Sam Mina&apos;s Portfolio</h1>
 
       {/* Navigation component: Handles the navigation links (About, Portfolio, Contact, Resume) */}
 

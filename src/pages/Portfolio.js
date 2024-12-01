@@ -1,12 +1,12 @@
-import React from 'react';
-import Project from '../components/Project';
+import React from "react";
+import Project from "../components/Project";
 
 // Project list
 
 const Portfolio = () => {
   return (
 
-    // Portfolio container
+  // Portfolio container
 
     <section className="portfolio">
       <h2>Portfolio</h2>

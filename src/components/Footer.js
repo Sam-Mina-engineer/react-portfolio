@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 // Footer
 
 const Footer = () => {
   return (
-    // Footer container which will include social media links
+  // Footer container which will include social media links
 
     <footer>
       <ul>

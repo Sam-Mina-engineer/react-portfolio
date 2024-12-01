@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
 // Import the weather dashboard image from assets
 
-import weatherdashboard from '../assets/images/weatherdashboard.png';
+import weatherdashboard from "../assets/images/weatherdashboard.png";
 
 // Projection section of portfolio
 
 const Project = () => {
   return (
-    // Project container
+  // Project container
     
     <div className="project">
       {/* Project title */}

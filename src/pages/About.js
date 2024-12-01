@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 // Import the image from the assets folder
 
-import avatar from '../assets/images/avatar.png';
+import avatar from "../assets/images/avatar.png";
 
 // My photo avatar along with short bio.
 
@@ -27,7 +27,7 @@ const About = () => {
           I have experience building responsive web applications with technologies such as
           React, JavaScript, HTML, CSS, Node.js, Express.js, PostgreSQL, MongoDB, and Mongoose.
           I enjoy learning how to code and learning new technologies. Going through Vanderbilt
-          University's full-stack web development bootcamp has been a challenge and a thrill at
+          Universitys full-stack web development bootcamp has been a challenge and a thrill at
           the same time. I look forward to launching a new career as a software engineer!
         </p>
       </div>

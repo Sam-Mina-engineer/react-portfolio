@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // Get in touch with me
 
 const Contact = () => {
-
-  // State Variables 
+  // State Variables
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
+
   const [errors, setErrors] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   // Input change
@@ -40,32 +40,37 @@ const Contact = () => {
     // Check if name is entered
 
     if (!formData.name) {
-      validationErrors.name = 'Name is required';
+      validationErrors.name = "Name is required";
     }
 
     // Check if email is valid
 
     if (!formData.email) {
-      validationErrors.email = 'Email is required';
+      validationErrors.email = "Email is required";
     } else if (!validateEmail(formData.email)) {
-      validationErrors.email = 'Invalid email address';
+      validationErrors.email = "Invalid email address";
     }
 
     // Check if message is entered
 
     if (!formData.message) {
-      validationErrors.message = 'Message is required';
+      validationErrors.message = "Message is required";
     }
 
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      console.log('Form submitted:', formData);
+      // Log form data only in non-production environments for debugging purposes
+
+      if (process.env.NODE_ENV !== "production") {
+        console.log("Form submitted:", formData);
+      }
+     
+      alert("Form successfully submitted!"); 
     }
   };
 
   return (
- 
     <section className="contact">
       <h2>Contact</h2>
       <form onSubmit={handleFormSubmit}>
@@ -79,7 +84,7 @@ const Contact = () => {
             value={formData.name}
             onChange={handleInputChange}
             onBlur={() =>
-              !formData.name && setErrors({ ...errors, name: 'Name is required' })
+              !formData.name && setErrors({ ...errors, name: "Name is required" })
             }
           />
           {errors.name && <span className="error">{errors.name}</span>}
@@ -96,9 +101,9 @@ const Contact = () => {
             onChange={handleInputChange}
             onBlur={() => {
               if (!formData.email) {
-                setErrors({ ...errors, email: 'Email is required' });
+                setErrors({ ...errors, email: "Email is required" });
               } else if (!validateEmail(formData.email)) {
-                setErrors({ ...errors, email: 'Invalid email address' });
+                setErrors({ ...errors, email: "Invalid email address" });
               }
             }}
           />
@@ -114,7 +119,7 @@ const Contact = () => {
             value={formData.message}
             onChange={handleInputChange}
             onBlur={() =>
-              !formData.message && setErrors({ ...errors, message: 'Message is required' })
+              !formData.message && setErrors({ ...errors, message: "Message is required" })
             }
           ></textarea>
           {errors.message && <span className="error">{errors.message}</span>}
@@ -128,4 +133,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

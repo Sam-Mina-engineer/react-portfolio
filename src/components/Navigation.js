@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 // Navigation Component
 
 const Navigation = () => {
   return (
 
-    // The navigation container which holds the different section links
+  // The navigation container which holds the different section links
 
     <nav>
       <ul>
