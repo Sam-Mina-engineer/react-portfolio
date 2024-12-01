@@ -17,10 +17,10 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<About />} /> {/* Default route */}
-          <Route path="/About" element={<About />} />
-          <Route path="/Portfolio" element={<Portfolio />} />
-          <Route path="/Resume" element={<Resume />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<About />} /> {/* Fallback route */}
         </Routes>
       </main>
