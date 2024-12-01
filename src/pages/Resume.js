@@ -5,7 +5,6 @@ import React from 'react';
 const Resume = () => {
   return (
     // Resume container
-
     <section className="resume">
       <h2>Resume</h2>
 
@@ -13,7 +12,7 @@ const Resume = () => {
       <div className="resume-download">
         <p>Download my resume:</p>
         <a
-          href="./assets/resume/Sam-Mina-Resume.pdf"
+          href="/assets/resume/Sam-Mina-Resume.pdf" // Corrected path to public folder
           download="Sam-Mina-Resume"
           target="_blank"
           rel="noopener noreferrer"
@@ -43,7 +42,7 @@ const Resume = () => {
 
           {/* Additional Skills */}
           <li>
-            <strong>Other Skills:</strong> Git, Testing driven developlent, Agile Methodologies
+            <strong>Other Skills:</strong> Git, Testing driven development, Agile Methodologies
           </li>
         </ul>
       </div>
@@ -51,6 +50,4 @@ const Resume = () => {
   );
 };
 
-
 export default Resume;
-

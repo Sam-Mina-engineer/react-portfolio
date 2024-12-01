@@ -1,16 +1,19 @@
 import React from 'react';
 
+// Import the image from the assets folder
+
+import avatar from '../assets/images/avatar.png';
+
 // My photo avatar along with short bio.
 
 const About = () => {
   return (
-    // Container for the About Me section
-
+   
     <section className="about-me">
       {/* Developer's photo avatar */}
       <div className="avatar-container">
         <img
-          src="./assets/images/avatar.png"
+          src={avatar} // Using the imported image
           alt="Developer Avatar"
           className="avatar"
         />
@@ -33,4 +36,3 @@ const About = () => {
 };
 
 export default About;
-
